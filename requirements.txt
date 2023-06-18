@@ -1,0 +1,6 @@
+scikit-learn
+sklearn
+pandas
+numpy
+flask
+mgzip

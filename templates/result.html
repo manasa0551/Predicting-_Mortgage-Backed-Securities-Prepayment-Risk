@@ -1,0 +1,79 @@
+<html> 
+  <body>
+  <center>
+    <table>
+      <tr><td></td></tr>
+    </table>
+    <h3><b><u>Your Provided Data</u></b></h3>    
+  </center>
+  <body>          
+    <form action='/index' method='POST'>
+    <center>                
+      <table>
+        <tr>
+          <td><h4><b>Credit Score:</b></h4></td><td><h4>{{ creditscore }}</h4></td>
+          <td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+          <td></td><td></td><td></td><td></td><td></td><td></td><td></td>          
+          <td><h4><b>Loan Amount:</b></h4></td><td><h4>{{ loanamount }}</h4></td>
+          <td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+          <td></td><td></td><td></td><td></td><td></td><td></td><td></td>          
+          <td><h4><b>Rate of Interest:</b></h4></td><td><h4>{{ rateofinterest }}</h4></td>
+          <td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+          <td></td><td></td><td></td><td></td><td></td><td></td><td></td>         
+          <td><h4><b>Lone Tenure:</b></h4></td><td><h4>{{ loantenure }}</h4></td>
+          <td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+          <td></td><td></td><td></td><td></td><td></td><td></td><td></td>          
+          <td><h4><b>Months in RePayment:</b></h4></td><td><h4>{{ monthsinrepayment }}</h4></td>
+          <td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+          <td></td><td></td><td></td><td></td><td></td><td></td><td></td>          
+          <td><h4><b>DTI Ratio:</b></h4></td><td><h4>{{ dtiratio }}</h4></td>
+        </tr>
+      </table>   
+      <center><h3><b><u>Predicted Result</u></b></h3></center>         
+      <table>
+        <tr>
+          <td><h4><b>Credit Grade:</b></h4></td>
+          <td><h4>{{ creditstatus }}</h4></td>
+        </tr>
+        <tr>
+          <td><h4><b>Monthly Emi Amount:</b></h4></td>
+          <td><h4>{{ emiamount }}</h4></td>
+        </tr>
+        <tr>
+          <td><h4><b>Total LoanAmount to be Paid:</b></h4></td>
+          <td><h4>{{ totalloanamount }}</h4></td>
+        </tr>
+        <tr>
+          <td><h4><b>Total Interest to be Paid:</b></h4></td>
+          <td><h4>{{ totalinterest }}</h4></td>
+        </tr>
+        <tr>
+          <td><h4><b>DTI Ratiograde:</b></h4></td>
+          <td><h4>{{ dtiratiograde }}</h4></td>
+        </tr>
+        <tr>
+          <td><h4><b>Newtenure for Repayment(In Months):</b></h4></td>
+          <td><h4>{{ newtenure }}</h4></td>          
+        </tr>
+        <tr>
+          <td><h4><b>Return on Investment(ROI) Ratio:</b></h4></td>
+          <td><h4>{{ roi }}</h4></td>
+        </tr>
+        <tr>
+          <td><h4><b>Deliquency Status:</b></h4></td>
+          <td><h4>{{ classout }}</h4></td>
+        </tr>
+        <tr>
+          <td><h4><b>Prefered-ROI(Ratio):</b></h4></td>
+          <td><h4>{{ regressionone }}</h4></td>
+        </tr>
+        <tr>
+          <td><h4><b>Prepayment Amount:</b></h4></td>
+          <td><h4>{{ regressiontwo }}</h4></td>
+        </tr> 
+      </table>          
+    </center>
+  </form> 
+  </body> 
+</html>   
+    
